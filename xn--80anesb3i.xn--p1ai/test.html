@@ -1,0 +1,169 @@
+<script type="text/javascript">
+  function startTimer() {
+    var my_timer = document.getElementById("my_timer");
+    var time = my_timer.innerHTML;
+    var arr = time.split(":");
+    var h = arr[0];
+    var m = arr[1];
+    var s = arr[2];
+    if (s == 0) {
+      if (m == 0) {
+        if (h == 0) {
+          alert("Время вышло");
+          window.location.reload();
+          return;
+        }
+        h--;
+        m = 60;
+        if (h < 10) h = "0" + h;
+      }
+      m--;
+      if (m < 10) m = "0" + m;
+      s = 59;
+    }
+    else s--;
+    if (s < 10) s = "0" + s;
+    document.getElementById("my_timer").innerHTML = h+":"+m+":"+s;
+    setTimeout(startTimer, 1000);
+  }
+</script>
+
+</head>
+
+<body onload="startTimer()">
+
+	<p><span id="my_timer" style="color: #f00; font-size: 150%; font-weight: bold;">До конца теста осталось 00:20:00</span></p>
+	
+</body>
+<html><head>
+<!DOCTYPE html>
+<html>
+<head>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>ТРЕНИНГ ПО РАЗДЕЛУ 1 «ЗАДАЧИ И ФУНКЦИИ АДМИНИСТРИРОВАНИЯ»</title>
+<script language="JavaScript">
+<!-- Hide JavaScript from Java-Impaired Browsers
+l=0;
+function dataBase(test) {
+     var counter=0;
+     if (test.q1[2].checked) {counter++;}
+     if (test.q2[1].checked) {counter++;}
+     if (test.q3[2].checked) {counter++;}
+     if (test.q4[0].checked) {counter++;}
+     if (test.q5[0].checked) {counter++;}
+     if (test.q6[0].checked) {counter++;}
+     if (test.q7[1].checked) {counter++;}
+     if (test.q8[1].checked) {counter++;}
+     if (test.q9[1].checked) {counter++;}
+     if (test.q10[2].checked) {counter++;}
+     if (test.q11[1].checked) {counter++;}
+     if (test.q12[2].checked) {counter++;}
+   if (l==0)
+     {
+   counter=counter;
+       }
+       else
+       {
+       counter=0;
+       }
+       l=l+1;
+     document.test.display.value = counter;
+}
+// End Hiding Script -->
+</script>
+</head><body bgcolor="#1bc2d1">
+<center>
+<form method="post" name="test">
+<!--ENCTYPE="text/plain"-->
+<h2>ТРЕНИНГ ПО РАЗДЕЛУ 1 «ЗАДАЧИ И ФУНКЦИИ АДМИНИСТРИРОВАНИЯ»</h2>
+<hr width="75">
+<h3>1.     Администрирование домена это:</h3><div align="left"><p style="margin-left: 100px;"><strong>
+<input name="q1" value="11" type="radio">мероприятия по выявлению ошибок в информационной системе;</br>
+<input name="q1" value="12" type="radio">администрирование СУБД;</br>
+<input name="q1" value="13" type="radio">совокупность мероприятий по организационно­технической поддержке функционирования домена, определению
+
+порядка его использования.</br>
+<input name="q1" value="14" type="radio">мероприятия по поддержанию рабочего режима с учетом мероприятий по соблюдению безопасности в корпоративных
+
+АИС;</br>
+</strong></p>
+</div><hr>
+<h3>2. Объектами администрирования могут быть</h3>
+<h3><i></i></h3><div align="left"><p style="margin-left: 100px;"><strong>
+<input name="q2" value="21" type="radio">процессы обработки данных программным обеспечением рабочих станций клиентов;</br>
+<input name="q2" value="22" type="radio">прикладные или системные процессы обработки данных, существующие в ИС и затрагивающие несколько подсистем;</br>
+<input name="q2" value="23" type="radio">сети с двумя доменами, работающие по принципу соподчиненности;</br>
+<input name="q2" value="24" type="radio">сети с одним доменом, работающие по принципу соподчиненности.</br>
+</strong></p>
+</div><hr>
+<h3>3. Перечислите основные функции администраторов:</h3><div align="left"><p style="margin-left: 100px;"><strong>
+<title></title>
+</head>
+<body>
+<form name="travel" action="http://ab-w.net/info.php" method="get">
+<input type="checkbox" name="q3" value="31" checked="checked" /> ведение учета энергопотребления информационной системой<br /> 
+<input type="checkbox" name="q3" value="32" />определение ошибок в работе прикладных, системных и аппаратных средств, используемых предприятием, и решение
+
+вопросов по их устранению<br /> 
+<input type="checkbox" name="q3" value="33" /> установка и сопровождение компьютерных сетевых и информационных систем<br /> 
+<input type="checkbox" name="q3" value="34" /> установка мультимедиа контента<br />
+</strong></p>
+</div><hr>
+<h3>4. Администратор системы (системный администратор) это:</h3><div align="left"><p style="margin-left: 100px;"><strong>
+<input name="q4" value="41" type="radio">человек или группа людей, которые создают и затем эксплуатируют информационную систему предприятия.</br>
+<input name="q4" value="42" type="radio">владелец информационной системы.</br>
+<input name="q4" value="43" type="radio">пользователь персональной рабочей станции.</br>
+</strong></p>
+</div><hr>
+<h3>5. Учетная запись пользователя это</h3><div align="left"><p style="margin-left: 100px;"><strong>
+<input name="q5" value="51" type="radio">это имя пользователя, которая уникальным образом распознает использующего данную систему человека.</br>
+<input name="q5" value="52" type="radio">запись в журнале посещений Windows Server.</br>
+<input name="q5" value="53" type="radio">серийный номер ПО который вводится пользователем при регистрации ПО.</br>
+ 
+</strong></p>
+</div><hr>
+<h3>6. Под информационной системой понимается:</h3><div align="left"><p style="margin-left: 100px;"><strong>
+<input name="q6" value="61" type="radio">материальная система, организующая, хранящая, преобразующая, обрабатывающая, передающая и предоставляющая
+
+информацию.</br>
+<input name="q6" value="62" type="radio">компьютерная сеть с одним или двумя главными серверами.</br>
+<input name="q6" value="63" type="radio">группа рабочих станций объединенная в сеть.</br>
+</strong></p>
+</div><hr>
+<h3>7. Вычислите, какой будет маска подсети длиной 28 бит ­
+
+11111111 11111111 11111111 11110000 в десятично­точечной нотации?</h3><div align="left"><p style="margin-left: 100px;"><strong>
+<input name="q7" value="71" type="radio">255. 255. 255. 255;</br>
+<input name="q7" value="72" type="radio">255. 255. 255. 240;</br>
+<input name="q7" value="73" type="radio">255. 255. 255. 24</br>
+</strong></p>
+</div><hr>
+<h3>8. В каком предложении не встречается обособленное обстоятельство (запятые не проставленны):</h3><div align="left"><p style="margin-left: 100px;"><strong>
+<input name="q8" value="81" type="radio">имя пользователя операционной системы серии Windows.</br>
+<input name="q8" value="82" type="radio">имя, служащее для идентификации областей — единиц административной автономии в сети Интернет — в составе
+
+вышестоящей по иерархии такой области.</br>
+<input name="q8" value="83" type="radio">имя администратора операционной системы серии Linux или Unix.</br>
+</strong></p>
+</div><hr>
+
+ 
+ 
+ 
+ 
+</strong></p>
+</div><hr>
+<table>
+<tbody><tr>
+<td colspan="3"><div align="center"><p><strong><hr>Нажмите на кнопу подсчитать баллы; для завершения теста:</strong></p></div></td>
+</tr>
+<tr align="center">
+<td><strong><input name="check" onclick="dataBase(this.form)" value=" Подсчитать баллы " type="button"></strong></td>
+<td><strong><textarea cols="5" name="display" rows="1" wrap="VIRTUAL"></textarea></strong></td>
+ 
+</tr>
+</tbody></table>
+</form></center>
+ 
+</body></html>
